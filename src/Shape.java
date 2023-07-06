@@ -1,7 +1,7 @@
 abstract class Shape {
 
-    public boolean filled;
-    public String colour;
+    protected boolean filled;
+    protected String colour;
 
     public Shape(){
         this.filled = true;

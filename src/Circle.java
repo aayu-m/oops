@@ -28,6 +28,8 @@ class Circle extends Shape{
     public double getPerimeter(){
         return 2*radius*Math.PI;
     }
+
+    @Override
     public String toString(){
         return "A circle with radius "+ this.radius + ", which is subclass of " + super.toString();
 

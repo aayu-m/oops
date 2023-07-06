@@ -1,17 +1,17 @@
-class Rect extends Shape{
+class Rectangle extends Shape{
     private double height;
     private double width;
 
-    public Rect(){
+    public Rectangle(){
      this.height=1;
      this.width=1;
     }
 
-    public Rect(double height,double width){
+    public Rectangle(double height,double width){
         this.height=height;
         this.width = width;
     }
-  public Rect(double height,double width,boolean filled, String colour){
+  public Rectangle(double height,double width,boolean filled, String colour){
         this.height = height;
         this.width=width;
         this.filled=filled;
@@ -38,6 +38,7 @@ class Rect extends Shape{
     public double getPerimeter(){
         return 2*(height+width);
     }
+    @Override
     public String toString(){
         return "A rectangle with height "+ this.height + " and width " + this.width+ ", which is subclass of " + super.toString();
 
